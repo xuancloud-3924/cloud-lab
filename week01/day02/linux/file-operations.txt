@@ -1,0 +1,64 @@
+DAY 2 - FILE OPERATIONS
+
+touch
+Create a file.
+
+cp
+Copy files.
+
+mv
+Move or rename files.
+
+rm
+Remove files.
+
+rmdir
+Remove empty directories.
+
+cat
+Display file contents.
+
+less
+Read files interactively.
+
+head
+Show the beginning of a file.
+
+tail
+Show the end of a file.
+
+file
+Identify file type.
+
+wc
+Count lines, words and bytes.
+
+sort
+Sort lines.
+
+uniq
+Remove duplicate adjacent lines.
+
+cut
+Extract fields from text.
+
+Important examples:
+
+echo "192.168.1.10 user1" >> network.txt
+
+cat network.txt
+
+head -n 2 network.txt
+
+tail -n 2 network.txt
+
+wc -l network.txt
+
+sort network.txt
+
+sort network.txt | uniq
+
+cut -d ' ' -f 1 network.txt
+
+cut -d ' ' -f 2 network.txt
+

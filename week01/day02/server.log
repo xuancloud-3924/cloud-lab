@@ -1,0 +1,6 @@
+2026-09-16 07:00 INFO Server started
+2026-09-16 07:05 INFO User user1 logged in
+2026-09-16 07:10 INFO User user2 logged in
+2026-09-16 07:15 WARNING Failed login for user3
+2026-09-16 07:20 ERROR Database connection failed
+2026-09-16 07:25 INFO Server restarted
