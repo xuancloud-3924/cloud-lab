@@ -1,0 +1,10 @@
+INFO Login successful user=xuan
+INFO Login successful user=admin
+WARNING Failed login user=root
+WARNING Failed login user=root
+WARNING Failed login user=root
+ERROR Authentication failed user=root
+INFO Login successful user=xuan
+WARNING Failed login user=admin
+ERROR Permission denied user=guest
+

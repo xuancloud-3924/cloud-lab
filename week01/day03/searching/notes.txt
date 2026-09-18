@@ -1,0 +1,118 @@
+DAY 03 - SEARCHING
+
+Today I learned three Linux commands:
+
+1. grep
+2. find
+3. locate
+
+
+====================
+GREP
+====================
+
+grep is used to search for text inside files.
+
+Examples:
+
+grep "ERROR" server.log
+
+grep -i "error" server.log
+
+grep -n "ERROR" server.log
+
+grep -c "ERROR" server.log
+
+grep -r "ERROR" logs/
+
+grep -E "ERROR|WARNING" server.log
+
+
+Options:
+
+-i = ignore uppercase/lowercase
+-n = show line numbers
+-c = count matching lines
+-r = search recursively
+-E = extended regular expression
+
+
+====================
+FIND
+====================
+
+find is used to search for files and directories.
+
+Examples:
+
+find . -type f
+
+find . -type d
+
+find . -type f -name "*.log"
+
+find . -type f -iname "server.log"
+
+find . -type f -size +1M
+
+find . -type f -mtime -1
+
+
+Options:
+
+-type f = file
+-type d = directory
+-name = search by name
+-iname = search by name, case-insensitive
+-size = search by file size
+-mtime = search by modification time
+
+
+====================
+LOCATE
+====================
+
+locate is used to quickly search for file paths.
+
+Examples:
+
+locate server.log
+
+sudo updatedb
+
+
+locate uses a database to search for file paths.
+
+
+====================
+SECURITY APPLICATION
+====================
+
+Searching is important in Cloud Security.
+
+grep can be used to search logs for:
+
+- ERROR
+- WARNING
+- Failed login
+- Authentication failure
+- Permission denied
+- Suspicious activity
+
+find can be used to search for:
+
+- Log files
+- Large files
+- Recently modified files
+- Suspicious files
+
+
+====================
+KEY LESSON
+====================
+
+grep  -> search content
+
+find  -> search files and directories
+
+locate -> search file paths quickly
