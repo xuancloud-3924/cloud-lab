@@ -1,0 +1,4 @@
+ERROR Database connection failed
+ERROR Permission denied
+ERROR Authentication failed
+ERROR Database connection failed
