@@ -1,0 +1,65 @@
+
+xuan@xuan-Dratini:~/cloud-lab/week01$ cd ..
+xuan@xuan-Dratini:~/cloud-lab$ whoami
+xuan
+xuan@xuan-Dratini:~/cloud-lab$ id
+uid=1000(xuan) gid=1000(xuan) groups=1000(xuan),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),100(users),111(lpadmin),114(lxd)
+xuan@xuan-Dratini:~/cloud-lab$ id xuan
+uid=1000(xuan) gid=1000(xuan) groups=1000(xuan),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),100(users),111(lpadmin),114(lxd)
+xuan@xuan-Dratini:~/cloud-lab$ groups
+xuan adm cdrom sudo dip plugdev users lpadmin lxd
+xuan@xuan-Dratini:~/cloud-lab$ groups xuan
+xuan : xuan adm cdrom sudo dip plugdev users lpadmin lxd
+xuan@xuan-Dratini:~/cloud-lab$ groups xuan
+xuan : xuan adm cdrom sudo dip plugdev users lpadmin lxd
+xuan@xuan-Dratini:~/cloud-lab$ who
+xuan@xuan-Dratini:~/cloud-lab$ cd ..
+xuan@xuan-Dratini:~$ cd
+xuan@xuan-Dratini:~$ who
+xuan@xuan-Dratini:~$ cd cloud-lab
+xuan@xuan-Dratini:~/cloud-lab$ sudo useradd analyst
+[sudo: authenticate] Password:     
+xuan@xuan-Dratini:~/cloud-lab$ id analyst
+uid=1001(analyst) gid=1001(analyst) groups=1001(analyst)
+xuan@xuan-Dratini:~/cloud-lab$ sudo passwd analyst
+New password: 
+BAD PASSWORD: The password is shorter than 8 characters
+Retype new password: 
+Sorry, passwords do not match.
+New password: 
+Retype new password: 
+passwd: password updated successfully
+xuan@xuan-Dratini:~/cloud-lab$ id analyst
+uid=1001(analyst) gid=1001(analyst) groups=1001(analyst)
+xuan@xuan-Dratini:~/cloud-lab$ groups analyst
+analyst : analyst
+xuan@xuan-Dratini:~/cloud-lab$ groups xuan
+xuan : xuan adm cdrom sudo dip plugdev users lpadmin lxd
+xuan@xuan-Dratini:~/cloud-lab$ id xuan
+uid=1000(xuan) gid=1000(xuan) groups=1000(xuan),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),100(users),111(lpadmin),114(lxd)
+xuan@xuan-Dratini:~/cloud-lab$ sudo groupadd security
+xuan@xuan-Dratini:~/cloud-lab$ getent group security
+security:x:1002:
+xuan@xuan-Dratini:~/cloud-lab$ sudo usermod -aG security analyst
+xuan@xuan-Dratini:~/cloud-lab$ id analyst
+uid=1001(analyst) gid=1001(analyst) groups=1001(analyst),1002(security)
+xuan@xuan-Dratini:~/cloud-lab$ groups analyst
+analyst : analyst security
+xuan@xuan-Dratini:~/cloud-lab$ gourps xuan
+gourps: command not found
+xuan@xuan-Dratini:~/cloud-lab$ groups xuan
+xuan : xuan adm cdrom sudo dip plugdev users lpadmin lxd
+xuan@xuan-Dratini:~/cloud-lab$ su - analyst
+Password: 
+su: warning: cannot change directory to /home/analyst: No such file or directory
+$ whoami
+analyst
+$ id
+uid=1001(analyst) gid=1001(analyst) groups=1001(analyst),1002(security)
+$ groups
+analyst security
+$ exit
+xuan@xuan-Dratini:~/cloud-lab$ whoami
+xuan
+xuan@xuan-Dratini:~/cloud-lab$ id analyst
+uid=1001(analyst) gid=1001(analyst) groups=1001(analyst),1002(security)

@@ -1,0 +1,146 @@
+DAY 05 - USERS & GROUPS
+=======================
+
+Today I learned about Linux users and groups.
+
+
+1. WHOAMI
+=========
+
+whoami shows the current username.
+
+Example:
+
+whoami
+
+
+2. ID
+=====
+
+id shows information about a user.
+
+Example:
+
+id
+
+id analyst
+
+It shows:
+
+- UID
+- GID
+- Groups
+
+
+3. WHO
+======
+
+who shows users currently logged in to the system.
+
+Example:
+
+who
+
+
+4. GROUPS
+=========
+
+groups shows the groups that a user belongs to.
+
+Examples:
+
+groups
+
+groups analyst
+
+
+5. CREATE USER
+==============
+
+Create a new user:
+
+sudo useradd analyst
+
+Set a password:
+
+sudo passwd analyst
+
+
+6. CREATE GROUP
+===============
+
+Create a security group:
+
+sudo groupadd security
+
+
+7. ADD USER TO GROUP
+====================
+
+Add analyst to the security group:
+
+sudo usermod -aG security analyst
+
+
+8. CHECK USER AND GROUP
+=======================
+
+Check analyst:
+
+id analyst
+
+Check groups:
+
+groups analyst
+
+
+9. BASIC CONCEPT
+================
+
+User
+  ↓
+Group
+  ↓
+Permission
+
+
+A user can belong to one or more groups.
+
+Groups are useful for managing access and permissions.
+
+
+10. SECURITY APPLICATION
+========================
+
+Users and groups are important in Linux security.
+
+Administrators can use groups to organize users
+and control access to resources.
+
+For example:
+
+analyst
+   ↓
+security
+   ↓
+access to security-related resources
+
+
+KEY LESSON
+==========
+
+whoami  -> show current user
+
+id      -> show user ID, group ID and groups
+
+who     -> show logged-in users
+
+groups  -> show user's groups
+
+useradd -> create user
+
+passwd  -> set user password
+
+groupadd -> create group
+
+usermod -aG -> add user to a group
