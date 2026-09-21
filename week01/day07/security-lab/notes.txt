@@ -1,0 +1,154 @@
+DAY 07 - MINI LAB #1
+====================
+
+Linux User & Permission Lab
+
+
+1. USERS
+========
+
+Created:
+
+admin
+developer
+analyst
+
+
+2. GROUPS
+=========
+
+Created:
+
+developers
+security
+
+
+User relationships:
+
+developer -> developers
+analyst   -> security
+
+
+3. DIRECTORY STRUCTURE
+======================
+
+security-lab/
+
+├── public/
+├── private/
+├── scripts/
+└── secrets/
+
+
+4. PUBLIC
+=========
+
+All users can read public information.
+
+Directory permission:
+
+755
+
+File permission:
+
+644
+
+
+5. PRIVATE
+==========
+
+Owner and group can access private resources.
+
+Directory permission:
+
+770
+
+File permission:
+
+660
+
+Group:
+
+developers
+
+
+6. SECRETS
+==========
+
+Only admin can access secrets.
+
+Directory permission:
+
+700
+
+File permission:
+
+600
+
+Owner:
+
+admin
+
+
+7. SCRIPTS
+==========
+
+backup.sh is executable.
+
+Permission:
+
+755
+
+
+8. COMMANDS USED
+================
+
+useradd
+passwd
+groupadd
+usermod
+chmod
+chown
+chgrp
+whoami
+id
+groups
+who
+ls -l
+
+
+9. SECURITY MODEL
+=================
+
+User
+  ↓
+Group
+  ↓
+Permission
+  ↓
+Resource Access
+
+
+10. WHAT I LEARNED
+==================
+
+Users identify who is accessing the system.
+
+Groups organize users.
+
+Permissions control what users can do.
+
+Linux permissions are important for system
+administration and Cloud Security.
+
+
+WEEK 1 COMPLETED
+================
+
+- Linux filesystem
+- File management
+- Users
+- Groups
+- Permissions
+- Basic shell commands
+- Mini Linux security lab
