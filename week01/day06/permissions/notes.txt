@@ -1,0 +1,178 @@
+DAY 06 - PERMISSIONS
+====================
+
+Today I learned about Linux file permissions.
+
+
+1. BASIC PERMISSIONS
+====================
+
+r = read
+w = write
+x = execute
+
+
+2. OWNER / GROUP / OTHERS
+=========================
+
+Example:
+
+-rwxr-xr--
+
+owner   group   others
+rwx     r-x     r--
+
+
+3. PERMISSION VALUES
+====================
+
+r = 4
+w = 2
+x = 1
+
+Examples:
+
+--- = 0
+--x = 1
+-w- = 2
+r-- = 4
+r-x = 5
+rw- = 6
+rwx = 7
+
+
+4. chmod
+=========
+
+chmod is used to change file permissions.
+
+
+600:
+
+rw- --- ---
+
+Owner:
+read + write
+
+Group:
+no permission
+
+Others:
+no permission
+
+
+644:
+
+rw- r-- r--
+
+Owner:
+read + write
+
+Group:
+read
+
+Others:
+read
+
+
+755:
+
+rwx r-x r-x
+
+Owner:
+read + write + execute
+
+Group:
+read + execute
+
+Others:
+read + execute
+
+
+5. IMPORTANT EXAMPLES
+=====================
+
+chmod 600 secret.txt
+
+chmod 644 file.txt
+
+chmod 755 script.sh
+
+
+6. chown
+========
+
+chown changes the owner of a file.
+
+Syntax:
+
+chown USER FILE
+
+Example:
+
+sudo chown xuan file.txt
+
+
+7. chgrp
+=========
+
+chgrp changes the group of a file.
+
+Syntax:
+
+chgrp GROUP FILE
+
+Example:
+
+sudo chgrp sudo file.txt
+
+
+8. OWNER AND GROUP
+==================
+
+A file has an owner and a group.
+
+Example:
+
+xuan xuan file.txt
+
+The first xuan is the owner.
+
+The second xuan is the group.
+
+
+9. SECURITY
+===========
+
+Permissions are important for Linux security.
+
+A sensitive file should not be readable
+or writable by every user.
+
+Example:
+
+chmod 600 secret.txt
+
+This gives the owner read and write permission
+while group and others have no permission.
+
+
+KEY LESSON
+==========
+
+600 -> private file
+
+644 -> normal readable file
+
+755 -> executable file
+
+r = 4
+w = 2
+x = 1
+
+
+User
+  ↓
+Group
+  ↓
+Permission
