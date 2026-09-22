@@ -1,0 +1,26 @@
+Day 8 - Linux Processes
+
+Topics:
+- Process
+- PID
+- PPID
+- Parent process
+- Child process
+- CPU usage
+- Memory usage
+
+Commands practiced:
+ps
+ps aux
+ps -ef
+top
+htop
+pgrep
+kill
+pkill
+
+Security practice:
+- Process enumeration
+- SSH process investigation
+- High CPU process investigation
+- High memory process investigation

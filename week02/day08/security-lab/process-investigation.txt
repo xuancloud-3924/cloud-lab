@@ -1,0 +1,46 @@
+DAY 8 - PROCESS INVESTIGATION
+
+1. What is a process?
+
+A process is a running instance of a program.
+
+2. What is PID?
+
+PID is the Process ID used by Linux to identify a process.
+
+3. What is PPID?
+
+PPID is the Parent Process ID.
+
+4. Why are processes important in security?
+
+Security analysts can inspect running processes to identify suspicious,
+unexpected or resource-intensive programs.
+
+5. Commands learned:
+
+ps
+ps aux
+ps -ef
+top
+htop
+pgrep
+kill
+pkill
+
+6. Process investigation commands:
+
+ps aux
+ps -ef
+pgrep -a ssh
+top
+htop
+
+7. Important security observations:
+
+- Check unknown processes.
+- Check unusual CPU usage.
+- Check unusual memory usage.
+- Check the process owner.
+- Check the parent process.
+- Check the command used to start the process.
