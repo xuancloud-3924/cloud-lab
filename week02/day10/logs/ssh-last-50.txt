@@ -1,0 +1,12 @@
+Sep 23 19:30:10 xuan-Dratini systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Sep 23 19:30:10 xuan-Dratini sshd[47132]: Server listening on 0.0.0.0 port 22.
+Sep 23 19:30:10 xuan-Dratini sshd[47132]: Server listening on :: port 22.
+Sep 23 19:30:10 xuan-Dratini systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+Sep 23 19:31:27 xuan-Dratini sshd[47132]: Received signal 15; terminating.
+Sep 23 19:31:27 xuan-Dratini systemd[1]: Stopping ssh.service - OpenBSD Secure Shell server...
+Sep 23 19:31:27 xuan-Dratini systemd[1]: ssh.service: Deactivated successfully.
+Sep 23 19:31:27 xuan-Dratini systemd[1]: Stopped ssh.service - OpenBSD Secure Shell server.
+Sep 23 19:31:27 xuan-Dratini systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Sep 23 19:31:27 xuan-Dratini sshd[47402]: Server listening on 0.0.0.0 port 22.
+Sep 23 19:31:27 xuan-Dratini sshd[47402]: Server listening on :: port 22.
+Sep 23 19:31:27 xuan-Dratini systemd[1]: Started ssh.service - OpenBSD Secure Shell server.

@@ -1,0 +1,39 @@
+DAY 10 - LOG INVESTIGATION
+
+1. What is a log?
+
+A log records events that happen on a system.
+
+2. Why are logs important in security?
+
+Logs provide evidence that can help analysts investigate suspicious activity.
+
+3. Commands learned:
+
+journalctl
+journalctl -n 50
+journalctl -f
+journalctl -u ssh
+journalctl --since today
+tail
+tail -f
+grep
+
+4. Important log locations:
+
+/var/log/
+/var/log/auth.log
+
+5. Security investigation questions:
+
+- When did the event happen?
+- Which user was involved?
+- What happened?
+- Was authentication successful or failed?
+- Was there a repeated pattern?
+- What source IP was involved?
+- Is the activity expected?
+
+6. Important lesson:
+
+A suspicious log entry should be investigated using context rather than immediately classified as malicious.

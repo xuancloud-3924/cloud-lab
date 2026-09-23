@@ -1,0 +1,25 @@
+Day 10 - Linux Logs
+
+Topics:
+- Linux logs
+- journalctl
+- /var/log
+- auth.log
+- tail
+- tail -f
+- grep
+
+Commands practiced:
+journalctl
+journalctl -n 50
+journalctl -u ssh
+journalctl --since today
+tail -n 50
+tail -f
+grep
+
+Security practice:
+- Inspected system logs
+- Inspected SSH logs
+- Inspected authentication logs
+- Searched for failed authentication events

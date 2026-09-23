@@ -1,0 +1,2 @@
+2026-09-23T20:10:35.740727+07:00 xuan-Dratini sudo: xuan : TTY=/dev/pts/0 ; PWD=/home/xuan ; USER=root ; COMMAND=/usr/bin/grep -i Failed password /var/log/auth.log
+2026-09-23T20:13:07.387129+07:00 xuan-Dratini sudo: xuan : TTY=/dev/pts/0 ; PWD=/home/xuan/cloud-lab ; USER=root ; COMMAND=/usr/bin/grep -i Failed password /var/log/auth.log
