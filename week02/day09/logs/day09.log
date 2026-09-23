@@ -1,0 +1,18 @@
+Day 9 - Linux Services
+
+Topics:
+- Linux services
+- systemd
+- systemctl
+- SSH service
+- Service status
+- Start
+- Stop
+- Restart
+- Enable
+- Disable
+
+Security practice:
+- Enumerated running services
+- Investigated SSH service
+- Learned how unexpected services can require investigation

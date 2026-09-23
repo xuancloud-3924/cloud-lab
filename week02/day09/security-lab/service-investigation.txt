@@ -1,0 +1,39 @@
+DAY 9 - SERVICE INVESTIGATION
+
+1. What is a service?
+
+A service is a background program that provides a system or application function.
+
+2. What is systemctl?
+
+systemctl is used to manage systemd services.
+
+3. Commands learned:
+
+systemctl status
+systemctl start
+systemctl stop
+systemctl restart
+systemctl enable
+systemctl disable
+systemctl is-active
+systemctl is-enabled
+
+4. SSH investigation:
+
+systemctl status ssh
+systemctl is-active ssh
+systemctl is-enabled ssh
+
+5. Security questions:
+
+- What services are running?
+- Is the service expected?
+- Who installed the service?
+- What does the service do?
+- Does the service provide network access?
+- Is the service required?
+
+6. Security mindset:
+
+Unexpected services should be investigated before deciding whether they are malicious.
