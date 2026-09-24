@@ -1,0 +1,19 @@
+Day 11 - SSH
+
+Topics:
+- SSH
+- Port 22
+- SSH client
+- SSH server
+- Username/password authentication
+- SSH key authentication
+- Private key
+- Public key
+- ssh-keygen
+
+Practice:
+- Checked SSH service
+- Checked port 22
+- Checked ~/.ssh
+- Inspected SSH key permissions
+- Studied public/private key security

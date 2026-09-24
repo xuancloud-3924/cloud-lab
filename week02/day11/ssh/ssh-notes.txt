@@ -1,0 +1,21 @@
+SSH = Secure Shell
+
+SSH client:
+The computer that initiates an SSH connection.
+
+SSH server:
+The computer that accepts SSH connections.
+
+Default SSH port:
+22
+
+Example:
+
+ssh username@server-ip
+
+Authentication:
+- Password
+- SSH key
+
+SSH key pair:
+Private key + Public key

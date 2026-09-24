@@ -1,0 +1,36 @@
+DAY 11 - SSH KEY SECURITY
+
+SSH allows a user to securely connect to a remote computer.
+
+Default SSH port:
+22
+
+Authentication methods studied:
+- Username/password
+- SSH public key authentication
+
+SSH key pair:
+- Private key
+- Public key
+
+Private key:
+- Must remain secret
+- Must not be shared
+- Must not be uploaded to GitHub
+- Should have restrictive permissions
+
+Public key:
+- Can be placed on a server
+- Is not a secret
+
+Important files:
+
+~/.ssh/id_ed25519
+~/.ssh/id_ed25519.pub
+
+Security questions:
+
+1. What happens if someone gets my private key?
+2. Why should the private key have restrictive permissions?
+3. Why is the public key safe to share?
+4. Why is SSH key authentication useful for servers?
