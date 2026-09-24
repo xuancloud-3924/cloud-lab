@@ -1,0 +1,54 @@
+DAY 13 - LINUX SECURITY BASICS
+
+1. Authentication
+
+Authentication answers:
+"Who are you?"
+
+Examples:
+- Username/password
+- SSH key
+
+2. Authorization
+
+Authorization answers:
+"What are you allowed to do?"
+
+3. Permissions
+
+Linux permissions:
+- Read (r)
+- Write (w)
+- Execute (x)
+
+Permission groups:
+- Owner
+- Group
+- Others
+
+4. Root
+
+Root has UID 0 and has very high privileges.
+
+5. sudo
+
+sudo allows an authorized user to execute a command with elevated privileges.
+
+6. Least Privilege
+
+Users and applications should receive only the permissions they need.
+
+7. Why not run everything as root?
+
+Running everything as root increases the potential impact of mistakes,
+misconfigurations and compromised processes.
+
+8. Security mindset
+
+Before using elevated privileges, ask:
+
+- Do I really need elevated privileges?
+- What command am I running?
+- What can this command modify?
+- Can I perform the task as a normal user?
+- Is this permission necessary?

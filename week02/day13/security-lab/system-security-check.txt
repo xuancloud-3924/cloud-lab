@@ -1,0 +1,16 @@
+===== USER =====
+xuan
+
+===== ID =====
+uid=1000(xuan) gid=1000(xuan) groups=1000(xuan),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),100(users),111(lpadmin),114(lxd)
+
+===== SUDO =====
+User xuan may run the following commands on xuan-Dratini:
+    (ALL : ALL) ALL
+
+===== SSH =====
+active
+
+===== SSH PORT =====
+LISTEN 0      4096         0.0.0.0:22        0.0.0.0:*    users:(("sshd",pid=1633,fd=3),("systemd",pid=1,fd=96))
+LISTEN 0      4096            [::]:22           [::]:*    users:(("sshd",pid=1633,fd=4),("systemd",pid=1,fd=97))

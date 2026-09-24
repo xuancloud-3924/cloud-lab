@@ -1,0 +1,27 @@
+Day 13 - Linux Security Basics
+
+Topics:
+- Authentication
+- Authorization
+- Permissions
+- Least Privilege
+- Root
+- sudo
+- SSH security
+- Authentication logs
+
+Practice:
+- Checked current user
+- Checked user ID and groups
+- Checked sudo privileges
+- Checked SSH service
+- Checked SSH port
+- Inspected SSH configuration
+- Practiced Linux file permissions
+- Investigated authentication logs
+
+Security mindset:
+- Avoid unnecessary root privileges
+- Follow least privilege
+- Investigate permissions
+- Use logs as evidence
