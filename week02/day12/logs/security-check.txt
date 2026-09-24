@@ -1,0 +1,40 @@
+===== SECURITY CHECK =====
+
+Current user:
+xuan
+
+Hostname:
+xuan-Dratini
+
+IP address:
+192.168.11.216 
+
+SSH service:
+active
+
+Listening ports:
+Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:Port
+udp   UNCONN 0      0            0.0.0.0:5353       0.0.0.0:*   
+udp   UNCONN 0      0            0.0.0.0:44038      0.0.0.0:*   
+udp   UNCONN 0      0            0.0.0.0:36195      0.0.0.0:*   
+udp   UNCONN 0      0         127.0.0.54:53         0.0.0.0:*   
+udp   UNCONN 0      0      127.0.0.53%lo:53         0.0.0.0:*   
+udp   UNCONN 0      0          127.0.0.1:323        0.0.0.0:*   
+udp   UNCONN 0      0               [::]:5353          [::]:*   
+udp   UNCONN 0      0              [::1]:323           [::]:*   
+tcp   LISTEN 0      4096      127.0.0.54:53         0.0.0.0:*   
+tcp   LISTEN 0      4096       127.0.0.1:631        0.0.0.0:*   
+tcp   LISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*   
+tcp   LISTEN 0      4096         0.0.0.0:22         0.0.0.0:*   
+tcp   LISTEN 0      4096           [::1]:631           [::]:*   
+tcp   LISTEN 0      4096            [::]:22            [::]:*   
+
+Top CPU processes:
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+xuan       32285  400  0.0  12636  4892 pts/0    R+   14:16   0:00 ps aux --sort=-%cpu
+xuan        4936 20.9 13.2 13295452 991176 ?     Sl   10:57  41:47 /snap/firefox/8863/usr/lib/firefox/firefox
+xuan        5193 17.6  2.1 1065256 161352 ?      Sl   10:57  35:04 /snap/firefox/8863/usr/lib/firefox/firefox -contentproc -parentBuildID 20260904071051 -prefsHandle 0:37499 -prefMapHandle 1:294771 -sandboxReporter 2 -chrootClient 3 -ipcHandle 4 -initialChannelId {891eec3d-663c-42ae-95d7-9f3d89fe91ac} -parentPid 4936 -crashHelperPid 5024 -crashHelper 5 -crashReporter 6 -appDir /snap/firefox/8863/usr/lib/firefox/browser 4 rdd
+xuan       12917 16.6 10.4 20653076 778016 ?     Sl   11:28  27:55 /snap/firefox/8863/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:51084 -prefMapHandle 1:294771 -jsInitHandle 2:160936 -parentBuildID 20260904071051 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {02b8f0ea-b715-42be-91f1-280c0bbdd8f6} -parentPid 4936 -crashHelperPid 5024 -crashHelper 6 -crashReporter 7 -greomni /snap/firefox/8863/usr/lib/firefox/omni.ja -appomni /snap/firefox/8863/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/8863/usr/lib/firefox/browser 12 tab
+xuan       24925 16.4  7.8 3629960 589940 ?      Sl   13:45   5:11 /snap/firefox/8863/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:51084 -prefMapHandle 1:294771 -jsInitHandle 2:160936 -parentBuildID 20260904071051 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {39a29dda-a8d8-4dfa-b4c4-da90427cc1ac} -parentPid 4936 -crashHelperPid 5024 -crashHelper 6 -crashReporter 7 -greomni /snap/firefox/8863/usr/lib/firefox/omni.ja -appomni /snap/firefox/8863/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/8863/usr/lib/firefox/browser 27 tab
+
+===== END =====

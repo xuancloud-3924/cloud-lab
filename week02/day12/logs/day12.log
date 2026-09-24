@@ -1,0 +1,22 @@
+Day 12 - Bash Basics
+
+Topics:
+- Bash
+- Shebang
+- Variables
+- echo
+- read
+- if
+- for
+- Command substitution
+
+Scripts created:
+- system-info.sh
+- variables.sh
+- read-user.sh
+- check-user.sh
+- list-files.sh
+- security-check.sh
+
+Security practice:
+Created a Bash script to collect basic Linux security information.
